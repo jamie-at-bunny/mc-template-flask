@@ -1,0 +1,21 @@
+{
+  "id": "flask",
+  "name": "Flask",
+  "description": "Python Flask web app with Gunicorn, ready to deploy on Magic Containers.",
+  "icon": "code",
+  "containers": [
+    {
+      "name": "app",
+      "imageNamespace": "ghcr.io",
+      "imageName": "<your-username>/mc-template-flask",
+      "imageTag": "latest",
+      "endpoints": [
+        {
+          "displayName": "HTTP",
+          "type": "CDN",
+          "containerPort": 8000
+        }
+      ]
+    }
+  ]
+}
